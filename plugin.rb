@@ -19,8 +19,8 @@ after_initialize do
   DiscourseEvent.on(:site_setting_changed) do |name, old_value, new_value|
     if ["clean_category_enabled", "clean_category_group_name", "clean_category_interval_value", "clean_category_custom_field_value"].include?(name)
       Jobs::CheckGroupMembers.schedule_next_run if SiteSetting.clean_category_enabled
-    else
-      Jobs::CheckGroupMembers.cancel_scheduled_jobs
+    # else
+      # Jobs::CheckGroupMembers.cancel_scheduled_jobs
     end
   end
 end
