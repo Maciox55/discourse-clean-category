@@ -1,0 +1,11 @@
+en:
+  admin:
+    site_settings:
+      categories:
+        clean_categories: "Clean Categories"
+  site_settings:
+    clean_category_enabled: "Enable the clean category plugin"
+    clean_category_group_name: "Group name to check for membership based on custom field"
+    clean_category_custom_field_value: "Custom User Field Value to check"
+    clean_category_interval_value: "Interval value for the job schedule"
+    clean_category_category_ids: "Select Categories"

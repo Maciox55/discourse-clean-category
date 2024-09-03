@@ -1,0 +1,16 @@
+clean_category:
+  clean_category_enabled:
+    default: true
+    client: true
+
+  clean_category_group_name:
+    default: "specific-group"
+    client: true
+
+  clean_category_custom_field_value:
+    client: true
+    default: "user-field"
+
+  clean_category_interval_value:
+    default: 60
+    client: true
